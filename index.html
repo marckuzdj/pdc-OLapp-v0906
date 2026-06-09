@@ -304,26 +304,29 @@
 			<!-- CONTAINER GERAL QUE UNIFICA E ELIMINA O ESPAÇO EM BRANCO -->
 			<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 25px;">
 			    
-				<!-- 🎯 SUBSTITUIÇÃO CIRÚRGICA: ALINHAMENTO EXPANDIDO À DIREITA IGUAL AO LINK 'SAIR' -->
-				<div style="width: 100%; box-sizing: border-box;">
-				    <div style="text-align: left; margin-bottom: 15px; width: 100%;">
+			    <!-- BLOCO DA ESQUERDA: TODAS AS SUAS LISTAS SUBINDO JUNTAS -->
+				<div>
+				    <div style="text-align: left; margin-bottom: 15px;">
 				        <a id="lnkTokensConf" href="javascript:void(0)" onclick="carregarTokensPendentes()" style="color: #8A05BE; font-weight: bold; text-decoration: none; font-size: 14px;">🔑 Tokens Conferência</a>
 				    </div>
 				
-				    <!-- 🩹 INTERVENÇÃO CIRÚRGICA: Força a expansão total da div e empurra o link Concluídos até a borda direita -->
-				    <div style="display: flex !important; justify-content: space-between !important; align-items: center !important; margin-bottom: 15px; width: 100% !important; box-sizing: border-box;">
-				        <div style="text-align: left;">
-				            <a id="lnkTokenDev" href="javascript:void(0)" onclick="abrirModalDevolucao()" style="color: #8A05BE; font-weight: bold; text-decoration: none; font-size: 14px;">🔑 Token Devolução</a>
-				        </div>
-				        <div style="text-align: right; margin-left: auto;">
-				            <a id="lnkConcluidosOL" href="javascript:void(0)" onclick="abrirModalConcluidos()" style="color: #8A05BE; font-weight: bold; text-decoration: none; font-size: 14px;">✅ Concluídos</a>
-				        </div>
+				    <div style="text-align: left; margin-bottom: 15px;">
+				        <a id="lnkTokenDev" href="javascript:void(0)" onclick="abrirModalDevolucao()" style="color: #8A05BE; font-weight: bold; text-decoration: none; font-size: 14px;">🔑 Token Devolução</a>
 				    </div>
 				
-				    <div style="text-align: left; margin-bottom: 15px; width: 100%;">
+				    <div style="text-align: left; margin-bottom: 15px;">
 				        <a id="lnkAlterarRom" href="javascript:void(0)" onclick="adm_iniciarFluxoAlterarRomaneio()" style="color: #8A05BE; font-weight: bold; text-decoration: none; font-size: 14px;"> 🔄 Alterar Romaneio</a>
 				    </div>
 				</div>
+
+            </div>
+
+			<!-- LINK REATIVO: Adicionado acima de Intercorrências -->
+			<div style="display: flex; gap: 15px; margin-bottom: 10px; font-size: 13px; font-weight: bold; font-family: sans-serif;">
+			    <span id="lnkConcluidosOL" onclick="abrirModalConcluidos()" style="color: #8A05BE; cursor: pointer; display: flex; align-items: center; gap: 4px;">
+			        ✅ Concluídos
+			    </span>
+			</div>
 
 
 			<!-- LINK REATIVO: Adicionado acima de Intercorrências
